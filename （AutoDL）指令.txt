@@ -1,0 +1,16 @@
+1、unzip project.zip
+2、cd project
+3、
+conda create -n test python=3.11 -y \
+  -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/ \
+  -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ \
+  -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r/ \
+  --override-channels
+4、source activate test
+5、pip install -U pip
+6、pip install -r requirements.txt
+7、pip install ipykernel
+8、python -m ipykernel install --user --name test --display-name "test"
+9、apt-get install -y fontconfig fonts-noto-cjk fonts-wqy-zenhei fonts-wqy-microhei
+10、fc-cache -fv
+11、rm -rf ~/.cache/matplotlib
